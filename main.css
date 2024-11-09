@@ -1,0 +1,251 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Montserrat;
+  background-color: #f7f7fe;
+}
+
+.our-pricing {
+  font-size: 32px;
+  line-height: 39px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin-top: 71px;
+  margin-bottom: 40px;
+}
+
+.togl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.togl span {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.togl span:first-child {
+  color: #696edd;
+}
+.togl span:last-child {
+  color: #9b9eb8;
+}
+
+.dark-theme .togl span:first-child {
+  color: #9b9eb8;
+}
+.dark-theme .togl span:last-child {
+  color: #696edd;
+}
+#toggle {
+  /* -webkit-appearance: none; */
+  appearance: none;
+  height: 40px;
+  width: 75px;
+  background-color: #696edd;
+  position: relative;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+}
+#toggle:after {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #ffffff;
+  top: 5px;
+  left: 7px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+/* .dark-theme .container  */
+.dark-theme #toggle {
+  background-color: #696edd;
+  transition: 1.5s;
+}
+.dark-theme #toggle:after {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #fff;
+  top: 5px;
+  left: 38px;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.cards {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+  margin-bottom: 103px;
+}
+#cards-none {
+  display: none;
+}
+
+.dark-theme .cards {
+  display: none;
+}
+.dark-theme #cards-none {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards .box-large {
+  height: 501px;
+  width: 350px;
+  border-radius: 10px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #696edd;
+  color: #fff;
+}
+
+.cards .box {
+  width: 350px;
+  height: 453px;
+  border-radius: 10px;
+  padding-top: 31px;
+  padding-bottom: 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+
+.cards .box h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.cards .box-large h4 {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.cards .box h1 {
+  font-size: 72px;
+  line-height: 71px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+.cards .box-large h1 {
+  font-size: 72px;
+  line-height: 71px;
+  font-weight: 700;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.cards .box hr {
+  display: flex;
+  width: 288px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #6e728e;
+}
+
+.cards .box-large hr {
+  display: flex;
+  width: 288px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.cards .box p {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #6e728e;
+}
+
+.cards .box-large p {
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.cards .box button {
+  width: 288px;
+  height: 44px;
+  background-color: #696edd;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 6px;
+  margin-top: 20px;
+  line-height: 16px;
+  font-weight: 700;
+}
+.cards .box button:hover {
+  border: 1px solid #696edd;
+  background-color: #fff;
+  color: #696edd;
+  transition: 0.2s;
+}
+
+.cards .box-large button {
+  width: 288px;
+  height: 44px;
+  background-color: #fff;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+  color: #696edd;
+  border-radius: 6px;
+  margin-top: 20px;
+  line-height: 16px;
+  font-weight: 700;
+}
+.cards .box-large button:hover {
+  border: 1px solid #fff;
+  background-color: #696edd;
+  color: #fff;
+  transition: 0.2s;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .cards .box-large {
+    width: 350px;
+    height: 453px;
+    border-radius: 10px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #696edd;
+    color: #fff;
+  }
+}
